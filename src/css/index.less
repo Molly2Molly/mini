@@ -1,0 +1,30 @@
+.hello {
+  color: red;
+  display:flex;
+  flex:1;
+  background: url('../images/arrow.svg');
+}
+
+.border(@name, @px, @color){
+  @name: @px * 1px solid @color;
+  [data-dpr="2"] & {
+      @name: (@px * 0.5) * 1px solid @color;
+  }
+  [data-dpr="2.5"] & {
+      @name: (@px * 0.5) * 1px solid @color;
+  }
+  [data-dpr="2.75"] & {
+      @name: (@px * 0.5) * 1px solid @color;
+  }
+  [data-dpr="3"] & {
+      @name: (@px * 0.5) * 1px solid @color;
+  }
+  [data-dpr="4"] & {
+      @name: (@px * 0.25) * 1px solid @color;
+  }
+}
+
+.d3 {
+	width:100%;
+	height:2rem;
+}

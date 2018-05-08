@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="no"?>
+
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  version="1.1">
+  <defs>
+
+  </defs>
+  <!-- font-family、font-style、font-weight、font-variant、font-stretch、font-size、font-size-adjust、kerning、letter-spacing、word-spacing和text-decoration -->
+  <text x="10" y="10" font-size="14px" id="example">Hello World! T</text>
+
+  <text x="10" y="30" >
+    <!-- x dx y dy rorate textLength -->
+    <tspan font-weight="bold" fill="red">This is bold and red</tspan>
+  </text>
+
+  <text>
+      <tref xlink:href="#example" />
+  </text>
+
+  <path id="my_path" d="M 10,100 C 40,60 80,60 100,40" />
+  <text>
+    <textPath xlink:href="#my_path">This text follows a curve.</textPath>
+  </text>
+
+</svg>

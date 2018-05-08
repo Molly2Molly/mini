@@ -1,0 +1,31 @@
+<?xml version="1.0" standalone="no"?>
+
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+  <defs>
+
+  </defs>
+
+  <g fill="red">
+    <rect x="0" y="0" width="10" height="10" />
+    <rect x="20" y="0" width="10" height="10" />
+  </g>
+
+  <rect x="0" y="0" width="10" height="10" transform="translate(30,30)" />
+  <rect x="100" y="100" width="20" height="20" transform="rotate(45)" />
+
+  <!-- skewX() skewY() scale() -->
+  <!-- matrix(a, b, c, d, e, f) -->
+  <!-- xnewCoordSys=a*xprevCoordSys+c*yprevCoordSys+e  ynewCoordSys=b*xprevCoordSys+d*yprevCoordSys+f -->
+  <!--
+  a c e   x_pre   x_new
+  b d f * y_pre = y_new
+  0 0 1   1       1
+  -->
+
+  <!-- This is the element before translation and rotation are applied -->
+  <rect x="50" y="50" height="100" width="100" style="stroke:#000; fill: #0086B2" fill-opacity="0.2" stroke-opacity="0.2"></rect>
+  <!-- Now we add a text element and apply rotate and translate to both -->
+  <rect x="50" y="50" height="100" width="100" style="stroke:#000; fill: #0086B2" transform="translate(30) rotate(45 50 50)"></rect>
+  <text x="60" y="105" transform="translate(30) rotate(45 50 50)"> Hello Moz! </text>
+
+</svg>
