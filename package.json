@@ -1,5 +1,5 @@
 {
-  "name": "zhangyingzi-mini",
+  "name": "@zhangyingzi/mini",
   "sideEffects": [
     "*.css",
     "*.less"
