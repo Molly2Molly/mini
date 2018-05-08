@@ -1,10 +1,10 @@
 {
-  "name": "generator-zhangyingzi-mini",
+  "name": "zhangyingzi-mini",
   "sideEffects": [
     "*.css",
     "*.less"
   ],
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -17,7 +17,7 @@
     "build": "webpack --config webpack.prod.js",
     "start": "webpack-dev-server --open --config webpack.dev.js"
   },
-  "author": "",
+  "author": "zhangyingzi",
   "license": "ISC",
   "babel": {
     "presets": [
@@ -33,11 +33,9 @@
     "@observablehq/notebook-stdlib": "0.0.1",
     "alloytouch": "^0.2.5",
     "d3": "^5.1.0",
-    "del": "^3.0.0",
     "jquery": "^3.3.1",
     "lodash": "^4.17.5",
-    "normalize.css": "^8.0.0",
-    "yeoman-generator": "^2.0.5"
+    "normalize.css": "^8.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^8.3.0",
