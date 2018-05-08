@@ -1,12 +1,11 @@
 {
-  "name": "mini",
+  "name": "zhangyingzi_mini",
   "sideEffects": [
     "*.css",
     "*.less"
   ],
   "version": "1.0.0",
   "description": "",
-  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "npx": "npx webpack --config webpack.config.js",
@@ -34,9 +33,11 @@
     "@observablehq/notebook-stdlib": "0.0.1",
     "alloytouch": "^0.2.5",
     "d3": "^5.1.0",
+    "del": "^3.0.0",
     "jquery": "^3.3.1",
     "lodash": "^4.17.5",
-    "normalize.css": "^8.0.0"
+    "normalize.css": "^8.0.0",
+    "yeoman-generator": "^2.0.5"
   },
   "devDependencies": {
     "autoprefixer": "^8.3.0",
