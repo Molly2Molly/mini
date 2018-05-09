@@ -63,6 +63,7 @@ body{
   min-height: 100%;
   /*局部滚动使用弹性滚动效果*/
   -wekit-overflow-scrolling:touch;
+  font-size:12px;
 }
 
 /*640*1136*/

@@ -6,6 +6,9 @@ import $ from 'jquery';
 import _ from 'lodash';
 import * as d3 from "d3";
 import {runtimeLibrary} from '@observablehq/notebook-stdlib/src/index';
+
+import './css/d3-style.css';
+
 // import Arrow from '../images/arrow.svg';
 // import Data from '../data/data.xml';
 // import Data2 from '../data/data.json';
@@ -85,9 +88,9 @@ console.log(getCountries());
 
 
 
-let data = d3.csv("https://gist.githubusercontent.com/mbostock/ddc6d50c313ebe6edb45519f43358c6c/raw/c443ed14c34c5c1b544949a546dd9d0acd05bad3/temperatures.csv").then(function(result){
-	console.log(result)
-});
+// let data = d3.csv("https://gist.githubusercontent.com/mbostock/ddc6d50c313ebe6edb45519f43358c6c/raw/c443ed14c34c5c1b544949a546dd9d0acd05bad3/temperatures.csv").then(function(result){
+// 	console.log(result)
+// });
 
 const library = runtimeLibrary();
 library.DOM.download(
@@ -117,5 +120,36 @@ $('<object data="'+_image+'" type="image/svg+xml" />').appendTo($("body"));
 // 		$(".shapes-path").attr("d",'M20,230 Q'+_p+',205 50,230 T90,230');
 // 	},500);
 // });
+
+
+function printNest(nest, out, i) {
+    if(i === undefined) i = 0;
+
+    var tab = ""; for(var j = 0; j < i; ++j) tab += "&nbsp;";
+
+    nest.forEach(function (e) {
+        if (e.key)
+            out += tab + e.key + "<br>";
+        else
+            out += tab + printObject(e) + "<br>";
+
+        if (e.values)
+            out = printNest(e.values, out, ++i);
+        else
+            return out;
+    });
+
+    return out;
+}
+
+function printObject(obj) {
+    var s = "{";
+    for (var f in obj) {
+        s += f + ": " + obj[f] + ", ";
+    }
+    s += "}";
+    return s;
+}
+
 
 
