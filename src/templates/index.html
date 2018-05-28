@@ -8,9 +8,61 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="format-detection" content="telephone=no" />
     <title>Mini</title>
+    <style type="text/css">
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        svg {
+            cursor: pointer;
+            width: 100%;
+            height: 100%;
+        }
+
+        circle {
+            fill: none;
+            stroke: steelblue;
+        }
+        .arc {
+            fill: steelblue;
+            stroke: none;
+        }
+  
+        text {
+            cursor: pointer;
+            text-decoration: underline;
+            fill: blue;
+        }
+        circle {
+            fill: steelblue;
+        }
+
+
+    </style>
   </head>
   <body>
-    <section class="d3"></section>
+
+      <div class="control-group">
+        <button onclick="noForce()">
+            No Force
+        </button>
+        <button onclick="repulsion()">
+            Repulsion
+        </button>
+        <button onclick="gravity()">
+            Gravity
+        </button>
+        <button onclick="positioningWithGravity()">
+            Positioning with Gravity
+        </button>
+        <button onclick="positioningWithRepulsion()">
+            Positioning with Repulsion
+        </button>
+    </div>
 
   </body>
 </html>

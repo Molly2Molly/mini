@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-html,body,div,span,p,img,ul,ol,li,dd,dt,dl,input,button,form,textarea,select,option,table,tr,th,td,header,footer,section,aside{
+html,body,div,span,p,img,ul,ol,li,dd,dt,dl,input,button,form,textarea,select,option,table,tr,th,td,header,footer,section,aside,svg{
   box-sizing:border-box;
 }
 a,button,input,optgroup,select,textarea,div,span,p,h1,h2,h3,h4,h5,h6 {
@@ -65,6 +65,8 @@ body{
   -wekit-overflow-scrolling:touch;
   font-size:12px;
 }
+
+
 
 /*640*1136*/
 /*@media only screen and (max-width: 320px){html{font-size: 50px;}}
